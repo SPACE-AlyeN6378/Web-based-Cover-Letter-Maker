@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Maker</title>
+    <link rel="stylesheet" href="form_layout.css">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <script src="submission.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cover Letter Maker</h1>
+    </header>
+    
+    <main>
+    <form id="job_info">
+        <table align="center">
+            <tr>
+                <td><label for="job_title">Job ID: </label></td>
+                <td class="entry"><input id="job_id" name="job_id" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="job_title">Job Title: </label></td>
+                <td class="entry"><input id="job_title" name="job_title" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="company">Company: </label></td>
+                <td class="entry"><input id="company" name="company" type="text" required></td>
+            </tr>
+            <tr>
+                <td><label for="address1">Address Line 1: </label></td>
+                <td class="entry"><input id="address1" name="address1" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="location">City, Province: </label></td>
+                <td class="entry"><input id="location" name="location" type="text" 
+                    pattern="^[A-Za-z\s]+,\s[A-Za-z]{2}$" value="Victoria, BC" required></td>
+            </tr>
+            <tr>
+                <td><label for="address2">Address Line 2: </label></td>
+                <td class="entry"><input id="address2" name="address2" type="text"></td>
+            </tr>
+            <tr>
+                <td class="multi-line">Length of Work Term: </td>
+                <td class="entry">
+                    <input id="mos4" name="length" value="4" type="radio" checked>
+                    <label for="mos4">4 months</label><br>
+                    <input id="mos8" name="length" value="8" type="radio">
+                    <label for="mos8">8 months</label><br>
+                    <input id="mos12" name="length" value="12" type="radio">
+                    <label for="mos12">12 months</label><br>
+                    <input id="mos16" name="length" value="16" type="radio">
+                    <label for="mos16">16 months</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td class="multi-line">
+                    <label for="value1">Company Values: <br><sup>(At least 3)</sup></label>
+                </td>
+                <td class="entry">
+                    <input id="value1" name="value1" type="text" required placeholder="please fill here first"><br>
+                    <input id="value2" name="value2" type="text" required placeholder="please fill here first"><br>
+                    <input id="value3" name="value3" type="text" required placeholder="please fill here first"><br>
+                    <input id="value4" name="value4" type="text"><br>
+                    <input id="value5" name="value5" type="text">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td><label for="goal">Company Goal: </label></td>
+                <td class="entry"><input id="goal" name="Company Goal" type="text"></td><br><br>
+            </tr> -->
+            <tr>
+                <td class="multi-line">
+                    <label for="body">Body text: <br></label>
+                </td>
+                <td class="entry">
+                    <textarea id="body" rows="15" cols="40"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div style="text-align: center;">
+        <button style="align-items: center;" type="submit" onclick="submitForm()">Generate</button>
+    </div>
+    
+
+    </main>
+    <footer>
+        <p><i>Developer: Aly Mooltazeem</i><br>
+        <a href="mailto:alymooltazeem@egmail.com" target="_blank">E-mail</a> | 
+        <a href="https://github.com/SPACE-AlyeN6378" target="_blank">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/aly-mooltazeem/" target="_blank">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
